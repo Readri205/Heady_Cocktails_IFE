@@ -1,10 +1,12 @@
-    const mymap = L.map('issMap').setView([0, 0], 6);
+        const mymap = L.map('issMap').setView([0, 0], 6);
       
-        const attribution =
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+        
+        L.mapbox.accessToken = 'pk.eyJ1IjoicmVhZHJpMjA1IiwiYSI6ImNrYzU1dGFjbjBlamwyc3RpZmtpeGNjcTYifQ.nhMHaWYNmRRyAeYUBuPJrA';
+        
+        const attribution = '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-        const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-        const tiles = L.tileLayer(tileUrl, { attribution });
+        const tileUrl = 'https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken;
+        const tiles = L.tileLayer(tileUrl, { attribution } );
         
         tiles.addTo(mymap);
 
@@ -35,5 +37,3 @@
 
       getISS();
       setInterval(getISS, 1000);
-
-

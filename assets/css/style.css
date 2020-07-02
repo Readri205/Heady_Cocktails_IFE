@@ -1,6 +1,6 @@
  /* Set the size of the div element that contains the map */
 #issMap {
-        height: 360px;  /* The height is 180 pixels */
+        height: 600px;  /* The height is 180 pixels */
        }
 
 .bushysunset {
@@ -15,7 +15,7 @@
     width: 100%;
     height: 600px;
     margin: 10px 0 0 0;
-    padding-bottom: 8px;
+    padding-bottom: 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
