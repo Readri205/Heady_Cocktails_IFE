@@ -1,3 +1,7 @@
+ body {
+     background-color: #000033;
+ }
+ 
  /* Set the size of the div element that contains the map */
 #issMap {
         height: 600px;  /* The height is 600 pixels */
@@ -38,6 +42,14 @@
     height: 400px;
     margin: 10px 10px;
     padding-bottom: 8px;
+}
+
+.text {
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
 }
 
 .header-text {
