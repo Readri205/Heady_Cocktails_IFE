@@ -9,3 +9,4 @@
 * V1.4 Amend for street view style
 * V1.5 Amend background color for body and text
 * V1.6 Update for flypast
+* V1.7 Update for standard trajectory
