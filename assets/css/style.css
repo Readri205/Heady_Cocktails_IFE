@@ -81,3 +81,7 @@
 .uppercase {
     text-transform: uppercase;
 }
+.emoji-text {
+    text-align: center;
+    font-size: 50px;
+}
