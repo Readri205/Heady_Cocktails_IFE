@@ -29,15 +29,18 @@
       async function getISS() {
         const response = await fetch(api_url);
         const data = await response.json();
-        const { latitude, longitude } = data;
-
+        const { latitude, longitude, velocity } = data;
+        
         // Always set the view to current lat lon and zoom!
         mymap.setView([latitude, longitude], mymap.getZoom());
         marker.setLatLng([latitude, longitude]);
+        
+        console.log(latitude, longitude, velocity);
 
         document.getElementById('lat').textContent = latitude.toFixed(2);
         document.getElementById('lon').textContent = longitude.toFixed(2);
-      }
-
+        document.getElementById('velocity').textContent = velocity.toFixed(0);
+      }      
+      
       getISS();
       setInterval(getISS, 1000);
