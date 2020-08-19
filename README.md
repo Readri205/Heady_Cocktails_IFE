@@ -11,3 +11,4 @@
 * V1.6 Update for flypast
 * V1.7 Update for standard trajectory
 * V1.8 Update for velocity
+* V1.9 Update VS check in HTML
